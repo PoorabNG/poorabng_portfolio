@@ -96,7 +96,25 @@
             position: relative;
         }
 
+        .section-title2 {
+            text-align: center;
+            font-size: 2.0rem;
+            font-weight: 700;
+            color: white;
+            position: relative;
+        }
+
         .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--text-color-primary);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-title2::after {
             content: '';
             display: block;
             width: 80px;
@@ -243,6 +261,7 @@
         .project-content a {
             display: inline-block;
             margin-top: 15px;
+            margin-right: 8px;
             color: var(--accent-color);
             text-decoration: none;
             font-weight: 600;
@@ -415,6 +434,10 @@
             grid-template-columns: repeat(auto-fit,300px);
         }
 
+        .container.certificates-grid {
+            max-width: 1300px;
+        }
+
         .certificate-item img {
             width: 100%;
             height: auto;
@@ -577,11 +600,30 @@
     <h2 class="section-title">Projects</h2>
     <div class="container projects-grid">
         <div class="project-card">
-            <img src="assets/cc.png" alt="Project 1">
+            <img src="assets/ri.png" alt="Project 1">
+            <div class="project-content">
+                <h3>Rad-Intel</h3>
+                <p>AI-powered web platform for pneumonia screening from chest X-rays, combining a hybrid deep-learning model with Grad-CAM and LIME explanations. Includes structured reports, educational lung-health queries, and clinician feedback features.</p>
+                <a href="https://radintel-mce.indiasouthcentral.cloudapp.azure.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href="https://github.com/Nandanhs006/Rad-Intel" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="assets/mm.png" alt="Project 2">
+            <div class="project-content">
+                <h3>Medimind</h3>
+                <p>A healthcare web application designed to help users explore health-related information and access relevant medical resources. Built with a focus on simplifying healthcare information through an intuitive, user-friendly interface.</p>
+                <a href="https://medimind-1-ejio.onrender.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href="https://github.com/Nandanhs006/MediMind" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="assets/cc.png" alt="Project 3">
             <div class="project-content">
                 <h3>Campus Compass</h3>
                 <p>App that helps you actually socialise within your campus. (This is just a prototype of the app interface).</p>
-                <a href="https://www.figma.com/community/file/1577898739964734456" target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href="https://www.figma.com/proto/eCt3OvTv9MSqCwHgJ8nmS0/Campus-Compass--Community-?node-id=10-9&p=f&t=l9eJMS2UXVWMzp7Z-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=23%3A67&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href="https://www.figma.com/community/file/1577898739964734456" target="_blank" rel="noopener noreferrer">Figma Project</a>
             </div>
         </div>
     </div>
@@ -593,42 +635,56 @@
         <div class="education-item">
             <h4>Bachelor of Engineering in Computer Science</h4>
             <p>Malnad College of Engineering | 2023-2027</p>
+            <h4>CGPA: 8.94</h4>
+        </div>
+        <br>
+        <div class="education-item">
+            <h4>Pre-University Education in PCMB Stream</h4>
+            <p>Masters PU College | 2021-2023</p>
+            <h4>Percentage: 93.5%</h4>
+        </div>
+        <br>
+        <div class="education-item">
+            <h4>Secondary School Education</h4>
+            <p>Kendriya Vidyalya Hassan | 2013-2021</p>
+            <h4>Percentage: 89.4%</h4>
         </div>
     </div>
 </section>
 
 <section id="certificates" class="section fade-in">
-    <h2 class="section-title">Certificates & Achievements</h2>
+    <h3 class="section-title">Certificates & Achievements</h3>
+    <br></br>
+    <h3 class="section-title2">Internships</h3>
+    <br></br>
     <div class="container certificates-grid">
         <div class="certificate-item">
             <p>WSA FSWD in MERN, Internship | Dec 1-Jan 30, 2025-26</p>
             <img src="assets/wsa_internship_certificate_PoorabN G.png" alt="wsa_internship_certificate_PoorabN G.png" class="proof-image" onclick="openModal(event, 'assets/WSA internship certificate.png')">
         </div>
+    </div>
+    <br></br>
+    <h3 class="section-title2">Publications</h3>
+    <br></br>
+    <div class="container certificates-grid">
         <div class="certificate-item">
             <p>Comprehensive Survey Paper Publication | May 25, 2026</p>
             <a href="https://www.ijraset.com/best-journal/datadriven-clinical-decision-support-framework-for-automated-pneumonia-detection" target="_blank">
             <img src="assets/ijraset_poorabng.png" alt="ijraset_poorabng.png" class="proof-image">
             </a>
         </div>
+    </div>
+    <br></br>
+    <h3 class="section-title2">Hackathons & Competitions</h3>
+    <br></br>
+    <div class="container certificates-grid">
         <div class="certificate-item">
-            <p>NPTEL noc25-cs135 | Oct 31, 2025</p>
-            <img src="assets/Design and Implementation of Human Computer Interfaces course Certificate.png" alt="Design and Implementation of Human Computer Interfaces course Certificate.png" class="proof-image" onclick="openModal(event, 'assets/Design and Implementation of Human Computer Interfaces course Certificate.png')">
+            <p>Adobe University Hackathon | Aug 9, 2026</p>
+            <img src="assets/Unstop Adobe Hackathon participation certificate.png" alt="Unstop Adobe Hackathon participation certificate.png" class="proof-image" onclick="openModal(event, 'assets/Unstop Adobe Hackathon participation certificate.png')">
         </div>
         <div class="certificate-item">
-            <p>IBM SkillsBuild-AI Fundamentals course | Jul 19, 2026</p>
-            <img src="assets/IBMSkillsBuild AI Fundamentals.png" alt="IBMSkillsBuild AI Fundamentals.png" class="proof-image" onclick="openModal(event, 'assets/IBMSkillsBuild AI Fundamentals.png')">
-        </div>
-        <div class="certificate-item">
-            <p>IBM SkillsBuild-Getting Started with AI course | Feb 18, 2026</p>
-            <img src="assets/IBMSkillsBuild Getting Started with AI.png" alt="IBMSkillsBuild Getting Started with AI.png" class="proof-image" onclick="openModal(event, 'assets/IBMSkillsBuild Getting Started with AI.png')">
-        </div>
-        <div class="certificate-item">
-            <p>Infosys Springboard-Data Warehousing course | Oct 3, 2025</p>
-            <img src="assets/Infosys Springboard Data Warehousing Course Certificate.png" alt="Infosys Springboard Data Warehousing Course Certificate.png" class="proof-image" onclick="openModal(event, 'assets/Infosys Springboard Data Warehousing Course Certificate.png')">
-        </div>
-        <div class="certificate-item">
-            <p>ISRO course | Jul 26-30, 2021</p>
-            <img src="assets/ISRO Participation Certificate.png" alt="ISRO Participation Certificate.png" class="proof-image" onclick="openModal(event, 'assets/ISRO Participation Certificate.png')">
+            <p>HackBlox-Hackathon | Sep 5-6, 2026</p>
+            <img src="assets/Hackblox0 participation certificate.png" alt="Hackblox0 participation certificate.png" class="proof-image" onclick="openModal(event, 'assets/Hackblox participation certificate.png')">
         </div>
         <div class="certificate-item">
             <p>Pragyatha-Hackathon | Nov 28-29, 2025</p>
@@ -643,6 +699,47 @@
             <img src="assets/RoboTechX participation certificate.png" alt="RoboTechX participation certificate.png" class="proof-image" onclick="openModal(event, 'assets/RoboTechX participation certificate.png')">
         </div>
         <div class="certificate-item">
+            <p>Unstop AI QuizOff | Jul 19, 2026</p>
+            <img src="assets/Unstop QuizOff-AI Quiz participation certificate.png" alt="Unstop QuizOff-AI Quiz participation certificate.png" class="proof-image" onclick="openModal(event, 'assets/Unstop QuizOff-AI Quiz participation certificate.png')">
+        </div>
+        <div class="certificate-item">
+            <p>RBI90 Quiz | Sep 19, 2024</p>
+            <img src="assets/RBI90 Quiz Participation Certificate.png" alt="RBI90 Quiz Participation Certificate.png" class="proof-image" onclick="openModal(event, 'assets/RBI90 Quiz Participation Certificate.png')">
+        </div>
+    </div>
+    <br></br>
+    <h3 class="section-title2">Courses & Programmes</h3>
+    <br></br>
+    <div class="container certificates-grid">
+        <div class="certificate-item">
+            <p>NPTEL noc25-cs135 | Oct 31, 2025</p>
+            <img src="assets/Design and Implementation of Human Computer Interfaces course Certificate.png" alt="Design and Implementation of Human Computer Interfaces course Certificate.png" class="proof-image" onclick="openModal(event, 'assets/Design and Implementation of Human Computer Interfaces course Certificate.png')">
+        </div>
+        <div class="certificate-item">
+            <p>IBM SkillsBuild-AI Fundamentals course | Jul 19, 2026</p>
+            <img src="assets/IBMSkillsBuild AI Fundamentals.png" alt="IBMSkillsBuild AI Fundamentals.png" class="proof-image" onclick="openModal(event, 'assets/IBMSkillsBuild AI Fundamentals.png')">
+        </div>
+        <div class="certificate-item">
+            <p>IBM SkillsBuild-Getting Started with AI course | Feb 18, 2026</p>
+            <img src="assets/IBMSkillsBuild Getting Started with AI.png" alt="IBMSkillsBuild Getting Started with AI.png" class="proof-image" onclick="openModal(event, 'assets/IBMSkillsBuild Getting Started with AI.png')">
+        </div>
+        <div class="certificate-item">
+            <p>Infosys Springboard-Big Data201 course | Oct 27, 2026</p>
+            <img src="assets/Infosys Springboard Big Data-201 Course Certificate.png" alt="Infosys Springboard Big Data-201 Course Certificate.png" class="proof-image" onclick="openModal(event, 'assets/Infosys Springboard Big Data-201 Course Certificate.png')">
+        </div>
+        <div class="certificate-item">
+            <p>Infosys Springboard-Data Warehousing course | Oct 3, 2025</p>
+            <img src="assets/Infosys Springboard Data Warehousing Course Certificate.png" alt="Infosys Springboard Data Warehousing Course Certificate.png" class="proof-image" onclick="openModal(event, 'assets/Infosys Springboard Data Warehousing Course Certificate.png')">
+        </div>
+        <div class="certificate-item">
+            <p>IIRS AIML course | Aug 3-14, 2026</p>
+            <img src="assets/IIRS AIML for Geodata Analytics course certificate.png" alt="IIRS AIML for Geodata Analytics course certificate.png" class="proof-image" onclick="openModal(event, 'assets/IIRS AIML for Geodata Analytics course certificate.png')">
+        </div>
+        <div class="certificate-item">
+            <p>ISRO course | Jul 26-30, 2021</p>
+            <img src="assets/ISRO Participation Certificate.png" alt="ISRO Participation Certificate.png" class="proof-image" onclick="openModal(event, 'assets/ISRO Participation Certificate.png')">
+        </div>
+        <div class="certificate-item">
             <p>UiPath Community-Student Programme | May 14-16, 2025</p>
             <img src="assets/UiPath student programme participation certificate.png" alt="UiPath student programme participation certificate.png" class="proof-image" onclick="openModal(event, 'assets/UiPath student programme participation certificate.png')">
         </div>
@@ -654,13 +751,14 @@
             <p>Enigma-Data Analytics Workshop | Nov 22, 2024</p>
             <img src="assets/Enigma-Data Analytics Workshop certificate.png" alt="Enigma-Data Analytics Workshop certificate.png" class="proof-image" onclick="openModal(event, 'assets/Enigma-Data Analytics Workshop certificate.png')">
         </div>
+    </div>
+    <br></br>
+    <h3 class="section-title2">Extracurricular Activities</h3>
+    <br></br>
+    <div class="container certificates-grid">
         <div class="certificate-item">
             <p>FPH Session | Mar 26, 2025</p>
             <img src="assets/FPH Session Attendance Certificate.png" alt="FPH Session Attendance Certificate.png" class="proof-image" onclick="openModal(event, 'assets/FPH Session Attendance Certificate.png')">
-        </div>
-        <div class="certificate-item">
-            <p>RBI90 Quiz | Sep 19, 2024</p>
-            <img src="assets/RBI90 Quiz Participation Certificate.png" alt="RBI90 Quiz Participation Certificate.png" class="proof-image" onclick="openModal(event, 'assets/RBI90 Quiz Participation Certificate.png')">
         </div>
         <div class="certificate-item">
             <p>Polio Awareness | Oct 24, 2024</p>
