@@ -224,9 +224,14 @@
         }
 
         .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 30px;
+        }
+
+        .project-card {
+            flex: 0 1 calc((100% - 60px) / 3);
         }
 
         .project-card {
@@ -506,6 +511,15 @@
             .about-text h1 { font-size: 2rem; }
             .section-title { font-size: 2rem; }
             .education-item { width: calc(100% - 40px); margin: 20px auto; }
+            .project-card {
+                flex-basis: calc((100% - 30px) / 2);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .project-card {
+                flex-basis: 100%;
+            }
         }
 
         .fade-in {
